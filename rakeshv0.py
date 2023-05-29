@@ -27,6 +27,6 @@ def generate_response(user_input):
 
 # Main program loop
 while True:
-    user_input = input("User: ")
+    user_input = input("User Input: ")
     response = generate_response(user_input)
-    print("Rakesh", response)
+    print("Rakesh Output:", response)
