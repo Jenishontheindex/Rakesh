@@ -1,4 +1,5 @@
 import random
+import requests
 
 # Define a list of greetings and corresponding responses
 greetings = ["hello", "hi", "hey", "greetings"]
@@ -33,6 +34,49 @@ def generate_response(user_input):
         return random.choice(technological_responses)
     elif user_input in farewells:
         return random.choice(farewell_responses)
+    else:
+        return "I'm sorry, I don't understand. Can you please rephrase your question?"
+    
+    # Function to handle user input and generate response
+def generate_response(user_input):
+    user_input = user_input.lower()
+    
+    if user_input in greetings:
+        return random.choice(greeting_responses)
+    elif user_input.startswith("tell me about"):
+        query = user_input.replace("tell me about", "").strip()
+        response = get_wikipedia_summary(query)
+        return response
+    else:
+        return "I'm sorry, I don't understand. Can you please rephrase your question?"
+
+# Function to retrieve a summary from Wikipedia
+def get_wikipedia_summary(query):
+    url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + query
+    response = requests.get(url)
+    data = response.json()
+    if "extract" in data:
+        return data["extract"]
+    else:
+        return "Sorry, I couldn't find any information about that."
+# Define a list of forbidden words
+forbidden_words = ["arsehole, asshole, arse, ass, arsehead, bastard, bitch, bullshit, cock, cunt, dick, fuck, motherfucker, nigga, nigger, pussy, piss, shit, slut, son of a bitch, twat, wanker, whore, hoe"]
+
+# Function to check if input contains profanity
+def contains_profanity(input_text):
+    for word in forbidden_words:
+        if word in input_text.lower():
+            return True
+    return False
+
+# Function to handle user input and generate response
+def generate_response(user_input):
+    user_input = user_input.lower()
+    
+    if user_input in greetings:
+        return random.choice(greeting_responses)
+    elif contains_profanity(user_input):
+        return "I'm sorry, but I cannot respond to that."
     else:
         return "I'm sorry, I don't understand. Can you please rephrase your question?"
 
