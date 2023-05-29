@@ -1,12 +1,13 @@
 # IMPORTANT
-I am now switching to replit for future Rakesh Development. I will be using the GitHub for issues so if there are any issues, post them on the GitHub. I wll post updates on the GitHub but the AI will be hosted on replit.
+I am now switching to replit for future Rakesh Development. I will be using the GitHub for issues so if there are any issues, post them on the GitHub. I wll post updates on the GitHub but the AI will be hosted on replit. Also I suck at python so this will be very broken for a while
+Current Version: Pre-Release v1.1
 
 replit Link: https://replit.com/@JenishPathak/Rakesh?v=1
 
 # Rakesh
 A tech support AI called Rakesh
 Cureently in development
-Predicted completion date: July 2023 - January 2024
+Predicted official V1 release date: July 2023 - January 2024
 
 
 
