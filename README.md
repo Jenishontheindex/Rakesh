@@ -1,5 +1,7 @@
 # IMPORTANT
-I am now switching to replit for future Rakesh Development
+I am now switching to replit for future Rakesh Development. I will be using the GitHub for issues so if there are any issues, post them on the GitHub. I wll post updates on the GitHub but the AI will be hosted on replit.
+
+replit Link: https://replit.com/@JenishPathak/Rakesh?v=1
 
 # Rakesh
 A tech support AI called Rakesh
@@ -8,7 +10,7 @@ Predicted completion date: July 2023 - January 2024
 
 
 
-# Tutorial for GitHub Release (No longer using)
+# Tutorial for GitHub Release (For v1 prebuild)
 # Chromebook tutorial
 To run it, open the terminal (if you don't have it then search on google "How to get terminal on Chromebook"), type "git clone https://github.com/Jenishontheindex/Rakesh". If the output is "git: command not found" then type "sudo apt install git" and type y if prompted. Run the git clone command again. type "cd Rakesh". Type "sudo apt install python3". Type y if prompted.  Type "python3 rakeshv0.py" (Replace "rakeshv0" with the latest file version which could be "rakeshv1" (not released as of typing this tutorial). Now enjoy the AI within the terminal.
 
