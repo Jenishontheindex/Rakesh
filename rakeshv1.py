@@ -5,8 +5,8 @@ greetings = ["hello", "hi", "hey", "greetings"]
 greeting_responses = ["Hello!", "Hi there!", "Hey!", "Greetings!"]
 
 # Define a list of basic questions and corresponding answers
-basic_questions = ["how are you?", "what can you do?"]
-basic_responses = ["I'm good, thank you!", "I can help you with various technological issues. Just let me know what you need assistance with!"]
+basic_questions = ["how are you?", "what is your name?", "what can you do?"]
+basic_responses = ["I'm good, thank you!", "My name is Rakesh, your AI assistant.", "I can help you with various technological issues. Just let me know what you need assistance with!"]
 
 # Define a list of technological topics and corresponding assistance
 technological_topics = ["programming", "networking", "hardware", "software"]
@@ -22,7 +22,7 @@ farewells = ["bye", "goodbye", "see you later", "take care"]
 farewell_responses = ["Goodbye!", "See you later!", "Take care!"]
 
 # Function to handle user input and generate response
-def generate_response(user_input, user_name):
+def generate_response(user_input):
     user_input = user_input.lower()
     
     if user_input in greetings:
@@ -34,7 +34,7 @@ def generate_response(user_input, user_name):
     elif user_input in farewells:
         return random.choice(farewell_responses)
     else:
-        return f"I'm sorry, {user_name}, I don't understand. Can you please rephrase your question?"
+        return "I'm sorry, I don't understand. Can you please rephrase your question?"
 
 # Main program loop
 def main():
@@ -43,7 +43,7 @@ def main():
     
     while True:
         user_input = input(user_name + ": ")
-        response = generate_response(user_input, user_name)
+        response = generate_response(user_input)
         print("Rakesh: ", response)
 
 if __name__ == '__main__':
