@@ -1,9 +1,14 @@
+# IMPORTANT
+I am now switching to replit for future Rakesh Development
+
 # Rakesh
 A tech support AI called Rakesh
 Cureently in development
 Predicted completion date: July 2023 - January 2024
 
-# Tutorial
+
+
+# Tutorial for GitHub Release (No longer using)
 # Chromebook tutorial
 To run it, open the terminal (if you don't have it then search on google "How to get terminal on Chromebook"), type "git clone https://github.com/Jenishontheindex/Rakesh". If the output is "git: command not found" then type "sudo apt install git" and type y if prompted. Run the git clone command again. type "cd Rakesh". Type "sudo apt install python3". Type y if prompted.  Type "python3 rakeshv0.py" (Replace "rakeshv0" with the latest file version which could be "rakeshv1" (not released as of typing this tutorial). Now enjoy the AI within the terminal.
 
